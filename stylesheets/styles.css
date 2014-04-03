@@ -1,0 +1,160 @@
+/*======================RESET===================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ /*HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*======================RESET===================*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+  width: 960px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+#content p {
+	font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#main a:link, a:visited {
+  color: #89979b;
+}
+
+#main a:hover {
+  color: black;
+}
+
+#main {
+  width: 940px;
+  height: 350px;
+  margin: 10px auto 0 auto;
+  padding: auto 0px;  
+}
+
+#main h1 {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+
+#main p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#main ul, #main ol {
+  margin: 20px;
+}
+
+/*======================PHOTOS===================*/
+
+#thumbs-container {
+	width: 145px;	
+	margin: auto;
+  float: left;
+}
+
+#thumbnails ul {
+	list-style-type: none;
+}
+
+#thumbnails li {
+	float: left;
+	margin: 0 5px 9px 0px;
+}
+
+ul img {
+  vertical-align: middle;
+  height: 95px;
+  width: 95px;
+  cursor: pointer;
+}
+
+//img.selected {
+  //border: 1px solid #000000;
+//}
+
+#front {
+  text-align: center;
+	width: 770px;
+  height: 513px;
+	margin: 20px auto;
+  padding: auto;
+  float: left;
+  background-color: #e7e7e7;
+}
+
+#front img {
+  width: 770px;
+	margin: 0 auto;
+  position: relative;
+}
+
+/*-------------------*/
+
+#caption {
+  position: absolute;
+  top: 517px;
+  color: white;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
