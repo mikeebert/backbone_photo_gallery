@@ -5,11 +5,11 @@ var FrontView = Backbone.View.extend({
   el: $('#front'),
 
   initialize: function() {
-    this.model.bind('thumbs:selected', this.render, this);
+    this.collection.bind('thumbs:selected', this.render, this);
   },
 
   render: function() {
-    selectedImage = this.model.selectedThumb()
+    selectedImage = this.collection.selectedThumb()
 
     if (selectedImage.get("caption") == '') {
       $(this.el).html(this.template(selectedImage.toJSON()));
@@ -18,5 +18,3 @@ var FrontView = Backbone.View.extend({
     }
   }
 });
-
-var frontview = new FrontView({ model: thumbs });
