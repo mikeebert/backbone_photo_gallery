@@ -35,4 +35,3 @@ var thumbs = new Thumbs(images);
 var frontView = new FrontView({collection: thumbs});
 window.App = new AppView();
 window.App.render(thumbs);
-
